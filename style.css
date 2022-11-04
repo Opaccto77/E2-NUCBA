@@ -1,0 +1,53 @@
+
+
+:root {
+    --background: #150050;
+    --navbar: #FB2576;
+    --succes: #3F0071;
+    --warning: #43F6D3;
+    --danger: #000000;
+    --blanco: #ffffff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Anton', sans-serif;
+}
+
+
+header {
+    background: var(--navbar);
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px;
+}
+
+.logo {
+    height: 75%;
+}
+
+
+.navbar, .listas {
+    display: flex;
+    justify-content: center;
+}
+
+.listas {
+    gap: 45px;
+}
+
+.listas a {
+    color: var(--danger);
+}
+
+.listas li:first-child > a {
+    color: var(--blanco);
+}
