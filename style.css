@@ -1,12 +1,14 @@
 
 
 :root {
-    --background: #150050;
+    --background: #000000;
     --navbar: #FB2576;
-    --succes: #3F0071;
-    --warning: #43F6D3;
-    --danger: #000000;
-    --blanco: #ffffff;
+    --warning: #48C9B0; 
+    --danger: #A3E4D7;
+    --morad: #633974;
+    --succes: #5B2C6F;
+    --fondito: #F2FE98;
+    --complementario: #34495E;
 }
 
 * {
@@ -20,7 +22,7 @@
 
 
 header {
-    background: var(--navbar);
+    background: var(--fondito);
     width: 100%;
     text-decoration: none;
     display: flex;
@@ -45,9 +47,9 @@ header {
 }
 
 .listas a {
-    color: var(--danger);
+    color: var(--warning);
 }
 
 .listas li:first-child > a {
-    color: var(--blanco);
+    color: var(--background);
 }
