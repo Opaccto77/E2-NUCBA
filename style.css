@@ -9,6 +9,7 @@
     --succes: #5B2C6F;
     --fondito: #F2FE98;
     --complementario: #34495E;
+    --fuentes: #ffffff;
 }
 
 * {
@@ -22,13 +23,13 @@
 
 
 header {
-    background: var(--fondito);
+    background: var(--complementario);
     width: 100%;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 65px;
+    height: 70px;
     padding: 0px 30px;
 }
 
@@ -40,16 +41,75 @@ header {
 .navbar, .listas {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .listas {
+    font-size: 20px;
     gap: 45px;
 }
 
 .listas a {
-    color: var(--warning);
+    color: var(--danger);
 }
 
 .listas li:first-child > a {
     color: var(--background);
+}
+
+body {
+    background-color: var(--danger);
+}
+
+#hero {
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 85px 50px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-descripcion {
+    background: var(--complementario);
+    border-radius: 5%;
+    padding: 25px 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.card-descripcion h1 {
+    font-size: 55px;
+    font-weight: 200;
+    color: var(--fuentes);
+}
+
+.boton {
+    border: 2px solid var(--fuentes);
+    border-radius: 5rem;
+    padding: 2px 15px;
+    color: var(--navbar);
+    display: flex;
+}
+
+.card-descripcion p {
+    /* font-size: 20px; */
+    color: var(--navbar)
+}
+
+.card-descripcion p span {
+    /* font-size: 21px; */
+    color: var(--fuentes);
+}
+
+.logotipo {
+    padding-left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
