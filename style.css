@@ -29,6 +29,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
     height: 70px;
     padding: 0px 30px;
 }
@@ -65,15 +67,15 @@ body {
     margin-top: 20px;
     margin-left: 100px;
     padding: 85px 50px;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .card-descripcion {
     background: var(--complementario);
-    border-radius: 5%;
+    border-radius: 25px;
     padding: 25px 30px; 
     display: flex;
     flex-direction: column;
@@ -94,7 +96,6 @@ body {
     border-radius: 5rem;
     padding: 2px 15px;
     color: var(--navbar);
-    display: flex;
 }
 
 .card-descripcion p {
@@ -112,4 +113,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.texto-informativo {
+    padding: 280px 30px;
+    /* background-color: var(--morad); */
+    background: linear-gradient(180deg, rgba(163,228,215,1) 0%, rgba(242,254,152,1) 100%);
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.text-card {
+    background: var(--complementario);
+    color: var(--fondito);
+    padding: 40px;
+    margin-top: 20px;
+    /* max-width: 1000px; */
+    border-radius: 25px;
 }
