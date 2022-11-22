@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css" />
     <title>portafolio</title>
 </head>
@@ -16,15 +17,15 @@
         <nav class="navbar">
             <ul class="listas">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">certificaciones</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#quierosabermas">Sobre mi</a></li>
+                <li><a href="#certificacion">certificaciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="hero">
-                <div class="card-descripcion" id="inicio">
+                <div class="card-descripcion"  id="inicio">
                     <h1>Bienvenidos a mi portafolio</h1>
                     <p>Me presento, me llamo Ulises Molina, me considero una persona ambivertida, me gusta conocer gente nueva aunque
                     me cueste mucho socializar.
@@ -37,11 +38,11 @@
                     <img src="./img/dibujo.svg" alt="logotipo" class="logotipo">
                 </div>
         </section>
-        <section>
+        <section id="info">
             <div class="texto-informativo" id="quierosabermas">
                 <p class="text-card">
-                    Me dedico en este momento a estudiar programación modalidad Front-End para luego 
-                    empezar en Back-End y así profesionalizarme lo mejor posible.
+                    Me dedico en este momento a estudiar programación modalidad <span>Front-End</span> para luego 
+                    empezar en <span>Back-End</span> y así profesionalizarme lo mejor posible.
                     Mi forma de trabajar es conjunta, podemos trabajar a la par en el diseño
                     que guste, dando recomendación desde mi perspectiva siempre y cuando
                     el cliente lo acepte.
@@ -51,6 +52,52 @@
                 </p>
             </div>
         </section>
+        <section id="card">
+            <h3 class="titulo" id="certificacion">Certificaciones</h3>
+            <div class="card-conteiner">
+                <div class="card1"><p>Estoy capacitado en curso de 
+                    informatica básica en manejo de herramientas como drive, google documentos, hoja de cálculo, formularios 
+                    aunque también tengo conocimientos en instalación de hardware y sofware.
+                    Seré programador... pero sí, puedo arreglar tu impresora.</p> 
+                </div>
+                <div class="card2">
+                    <p>
+                        Trabaje en una gráfica por lo cuál tuve que aprender principios básicos e intermedios de diseño
+                        gráfico por lo tanto tengo un poco de noción en lo que es el diseño y uso de herramientas
+                        para diseñadores graficos como inskcape, photoshop, fuentes de imagénes, vectores, manejo 
+                        de colores, etc.
+                    </p>
+                </div>
+                <div class="card3">
+                    <p>
+                        En este momento me estoy capacitando como programador FullStack en Nucba,
+                        a su vez estoy anotado en la carrera de Lic. en ciencias de la computación
+                        la cual comienzo en principios del año 2023 en la UNR.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- los nombres de las class (segundodiv, tercerdiv) de la siguiente seccion son porque habia un div más pero tuve -->
+        <!-- que eliminarlo porque sobraba -->
+        <section id="contactos" >
+            <div class="target-redes">
+                <h3 class="contactame">Contáctame</h3>
+                <div class="segundodiv" id="contacto">
+                    <div class="card"><a href="https://www.instagram.com/r.ronm/" target="_blank"><p>r.ronm</p></a></div>
+                    <div class="card-2"><a href="https://www.facebook.com/profile.php?id=100077362208423" target="_blank"><p>Ulises Molina</p></a></div>
+                    <div class="card-3"><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><p>ulisesmolina648@gmail.com</p></a></div>
+                </div>
+            </div>
+            <div class="tercerdiv">
+                <img src="./img/yo.jpg" alt="Ulises molina" class="imagen"/>
+            </div>
+        </section>
     </main>
+    <footer id="pie">
+        <div class="footer">
+            <p>muchas gracias por llegar hasta aquí</p>
+            <img src="./img/corazon.png" class="corazon" />
+        </div>
+    </footer>
 </body>
 </html>
