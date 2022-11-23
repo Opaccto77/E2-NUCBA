@@ -440,6 +440,7 @@ body {
         align-items: center;
         justify-content: center;
         transform: translateX(200%);
+        transition: all 0.4s ease-out;
     }
 
 
@@ -447,8 +448,14 @@ body {
         display: block;
     }
 
-    #toggle-menu: :checked ~ .listas {
-        transform: translateX(10%);    
+    #toggle-menu:checked ~ .listas {
+        transform: translateX(0%);
+        transition: all 0.4s ease-in;
+    }
+
+    header {
+        position: fixed;
+        z-index: 1;
     }
     
 }
